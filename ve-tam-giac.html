@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #result2,
+      #result3 {
+        text-align: right;
+        width: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="result"></div>
+    <div id="result1"></div>
+    <div id="result2"></div>
+    <div id="result3"></div>
+  </body>
+  <script>
+    for (let i = 1; i <= 5; i++) {
+      for (j = 1; j <= i; j++) {
+        document.getElementById("result").innerHTML += "*";
+      }
+      document.getElementById("result").innerHTML += "<br>";
+    }
+    document.getElementById("result").innerHTML += "<br>";
+
+    for (let i = 5; i >= 1; i--) {
+      for (j = 1; j <= i; j++) {
+        document.getElementById("result1").innerHTML += "*";
+      }
+      document.getElementById("result1").innerHTML += "<br>";
+    }
+    for (let i = 1; i <= 5; i++) {
+      for (j = 1; j <= i; j++) {
+        document.getElementById("result2").innerHTML += "*";
+      }
+      document.getElementById("result2").innerHTML += "<br>";
+    }
+    document.getElementById("result2").innerHTML += "<br>";
+
+    for (let i = 5; i >= 1; i--) {
+      for (j = 1; j <= i; j++) {
+        document.getElementById("result3").innerHTML += "*";
+      }
+      document.getElementById("result3").innerHTML += "<br>";
+    }
+  </script>
+</html>

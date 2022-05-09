@@ -8,10 +8,10 @@
   </head>
   <body></body>
   <script>
-    let value = null;
-    do {
-      value = prompt("Enter a number: ");
-      alert(value);
-    } while (value < 1 || value > 10);
+    let sum = 0;
+    for (let i = 0; i < 30; i++) {
+      sum += i * 7;
+    }
+    document.write(sum);
   </script>
 </html>

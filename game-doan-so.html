@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="play()">Chơi</button>
+  </body>
+  <script>
+    function play() {
+      let number = +prompt("Nhập vào số lớn nhất bạn muốn đoán: ");
+      let result = Math.floor(Math.random() * (number - 1) + 1);
+      console.log(result);
+      let num;
+      let count = 0;
+      let statis = 2;
+      do {
+        num = +prompt("Nhập vào số bạn muốn đoán");
+        if (num < result && count < statis) {
+          alert("Tăng lên");
+          count++;
+        } else if (num > result && count < statis) {
+          alert("Giảm xuống");
+          count++;
+        } else if (num != result && count == statis) {
+          alert("You Fail");
+          break;
+        } else {
+          alert("You win");
+          break;
+        }
+      } while (true);
+    }
+  </script>
+</html>

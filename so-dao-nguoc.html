@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="number" />
+    <button onclick="reverse()">Dảo ngược số</button>
+    <p>Số đảo ngược là: <span id="result"></span></p>
+  </body>
+  <script>
+    function reverse() {
+      let num = document.getElementById("number").value;
+      let soDu;
+      let soDaoNguoc = 0;
+      while (num > 0) {
+        soDu = num % 10;
+        soDaoNguoc = soDaoNguoc * 10 + soDu;
+        num = parseInt(num / 10);
+      }
+      document.getElementById("result").innerHTML = soDaoNguoc;
+    }
+  </script>
+</html>

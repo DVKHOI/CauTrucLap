@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    let nhietDo = +prompt("Mời bạn nhập nhiệt độ hiện tại");
+    do {
+      if (nhietDo > 100) {
+        alert("Bạn hãy giảm nhiệt độ");
+      } else if (nhietDo < 20) {
+        alert("Bạn hãy tăng nhiệt độ lên");
+      }
+      nhietDo = +prompt("Mời bạn nhập nhiệt độ hiện tại");
+    } while (nhietDo < 20 || nhietDo > 100);
+  </script>
+</html>
